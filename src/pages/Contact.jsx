@@ -24,7 +24,7 @@ const Contact = () => {
                 <FaMapMarkerAlt className="info-icon" />
                 <div>
                     <h3>Visit Us</h3>
-                    <p>Vikais Aviation Academy, 123 Aviation Hub, Main Airport Road, New Delhi, India 110037</p>
+                    <p>14-4C, Thattan Vilai Rd, Udhayamarthandam, Nagercoil, Tamil Nadu 629004</p>
                 </div>
             </div>
 
@@ -32,8 +32,7 @@ const Contact = () => {
                 <FaPhoneAlt className="info-icon" />
                 <div>
                     <h3>Call Us</h3>
-                    <p>+91 98765 43210</p>
-                    <p>+91 12345 67890</p>
+                    <p>+91 94878 06735</p>
                 </div>
             </div>
 

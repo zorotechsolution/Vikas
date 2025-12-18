@@ -3,6 +3,8 @@ import { Link, NavLink } from 'react-router-dom';
 import { FaBars, FaTimes, FaPlane } from 'react-icons/fa';
 import './Navbar.css';
 
+import img from "../assets/log-2.png"
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,10 +19,12 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container container">
-        <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          <FaPlane className="navbar-icon" />
-          Vikais <span className="logo-accent">Aviation</span>
-        </Link>
+        {/* <Link to="/" className="navbar-logo" onClick={closeMenu}>
+          <img src="" alt="" />
+          Vikas <span className="logo-accent"> Aviation  Academy</span>
+          
+        </Link> */}
+        <img src={img } width={150} alt="" />
         
         <div className="menu-icon" onClick={toggleMenu}>
           {isOpen ? <FaTimes /> : <FaBars />}
