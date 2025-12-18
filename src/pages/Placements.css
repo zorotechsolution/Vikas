@@ -1,0 +1,89 @@
+.placements-header {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.placements-header h1 {
+    color: var(--color-white);
+}
+
+.section-header-text {
+    text-align: center;
+    color: var(--color-secondary);
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.partner-logo {
+    height: 80px;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-md);
+    font-weight: bold;
+    color: #666;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+    transform: scale(1.05);
+    background: #e0f7fa;
+    color: var(--color-primary);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    padding: 2rem;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+    margin-bottom: 1.5rem;
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+}
+
+.student-avatar {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.student-info h4 {
+    margin-bottom: 0.2rem;
+    color: var(--color-secondary);
+}
+
+.student-info p {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+}

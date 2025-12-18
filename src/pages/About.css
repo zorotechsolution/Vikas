@@ -1,0 +1,89 @@
+.about-header {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about-header h1 {
+    color: var(--color-white);
+    font-size: 2.5rem;
+}
+
+.about-content {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-secondary);
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+}
+
+.about-stats {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    background: var(--color-white);
+    padding: 2rem;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.stat-item h3 {
+    font-size: 2rem;
+    color: var(--color-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.mission-vision-section {
+    background-color: var(--color-bg-light);
+    padding: 4rem 0;
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.mv-card {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.mv-icon {
+    font-size: 3rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
