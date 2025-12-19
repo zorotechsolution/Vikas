@@ -80,7 +80,14 @@
 }
 
 .map-section {
-    width: 100%;
+    width:80%;
+    display: flex;
+    margin: auto;
+    padding: 40px;
+    
+}
+.map-section iframe{
+    border-radius:10px;
 }
 
 @media screen and (max-width: 768px) {

@@ -29,10 +29,11 @@ const Footer = () => {
             <Link to="/courses">Cabin Crew</Link>
             <Link to="/courses">Ground Staff</Link>
             <Link to="/courses">Pilot Training</Link>
-            <Link to="/courses">Aviation Management</Link>
+            <Link to="/courses">Management</Link>
+            
           </div>
           <div className="footer-link-items">
-            <h2>Social Media</h2>
+            <h2 style={{fontSize:"16px"}} >Social  Media</h2>
             <Link to="/">Instagram</Link>
             <Link to="/">Facebook</Link>
             <Link to="/">Youtube</Link>
@@ -44,10 +45,10 @@ const Footer = () => {
         <div className="social-media-wrap">
           <div className="footer-logo">
             <Link to="/" className="social-logo">
-              Vikais Aviation
+              Vikas Aviation
             </Link>
           </div>
-          <small className="website-rights">Vikais Aviation Academy © {new Date().getFullYear()}</small>
+          <small className="website-rights">Vikas Aviation Academy © {new Date().getFullYear()}</small>
           <div className="social-icons">
             <Link className="social-icon-link facebook" to="/" target="_blank" aria-label="Facebook">
               <FaFacebook />

@@ -8,7 +8,7 @@ const About = () => {
     <div className="about-page">
       <div className="about-header">
         <div className="container">
-          <h1>About Vikais Aviation Academy</h1>
+          <h1>About Vikas Aviation Academy</h1>
         </div>
       </div>
 
@@ -16,7 +16,7 @@ const About = () => {
         <div className="about-text">
           <h2>Welcome to the Sky</h2>
           <p>
-            Vikais Aviation Academy is a premier institute dedicated to shaping the future of aviation professionals. 
+            Vikas Aviation Academy is a premier institute dedicated to shaping the future of aviation professionals. 
             With a focus on excellence, safety, and Service, we provide world-class training for Cabin Crew, 
             Ground Staff, and Aviation Management.
           </p>

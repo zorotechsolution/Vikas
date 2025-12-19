@@ -3,7 +3,7 @@ import Card from '../components/Card';
 import './Placements.css';
 
 const placementsData = [
-  { id: 1, name: 'Anjali Singh', airline: 'IndiGo', role: 'Cabin Crew', quote: 'Vikais gave me the confidence to fly high!' },
+  { id: 1, name: 'Anjali Singh', airline: 'IndiGo', role: 'Cabin Crew', quote: 'Vikas gave me the confidence to fly high!' },
   { id: 2, name: 'Rahul Sharma', airline: 'Air India', role: 'Ground Staff', quote: 'The training infrastructure is world-class.' },
   { id: 3, name: 'Priya Patel', airline: 'Emirates', role: 'Cabin Crew', quote: 'I am living my dream thanks to the expert faculty.' },
 ];

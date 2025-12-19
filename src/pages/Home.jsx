@@ -10,7 +10,7 @@ const Home = () => {
       {/* Hero Section */}
       <div className="hero-section">
         <div className="hero-content container">
-          <h1 className="hero-title">Launch Your Career with Vikais Aviation Academy</h1>
+          <h1 className="hero-title" style={{color:"whitesmoke"}}>Launch Your Career with Vikas Aviation Academy</h1>
           <p className="hero-subtitle">
             Premium training for Cabin Crew, Ground Staff, and Aviation Management. 
             Your runway to success starts here.
@@ -27,8 +27,8 @@ const Home = () => {
       </div>
 
       {/* Highlights Section */}
-      <section className="section container">
-        <h2 className="section-title">Why Choose Vikais?</h2>
+      <section className="section " style={{padding:"40px"}}>
+        <h2 className="section-title">Why Choose Vikas?</h2>
         <div className="features-grid">
           <Card className="feature-card">
             <div className="icon-wrapper">

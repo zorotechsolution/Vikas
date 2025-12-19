@@ -8,7 +8,7 @@ const Contact = () => {
     <div className="contact-page">
        <div className="contact-header">
         <div className="container">
-          <h1>Contact Us</h1>
+          <h1 style={{color:"white"}}>Contact Us</h1>
           <p>We'd love to hear from you</p>
         </div>
       </div>
@@ -40,7 +40,7 @@ const Contact = () => {
                 <FaEnvelope className="info-icon" />
                 <div>
                     <h3>Email Us</h3>
-                    <p>admissions@vikaisaviation.com</p>
+                    <p>admissions@Vikasaviation.com</p>
                 </div>
             </div>
 
