@@ -94,7 +94,7 @@ const Home = () => {
     </p>
 
     <div className="cta-actions">
-      <Button to="/courses" className="cta-btn">View Courses</Button>
+      <Button to="/courses" className="">View Courses</Button>
       <p className="cta-note">Limited seats available. Early applicants get priority.</p>
     </div>
   </div>
