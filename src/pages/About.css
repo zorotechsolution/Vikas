@@ -283,3 +283,22 @@
     font-size: 2.6rem;
   }
 }
+
+
+.center-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-promise {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.about-promise p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text-light);
+}

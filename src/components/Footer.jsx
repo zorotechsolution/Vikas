@@ -48,18 +48,16 @@ const Footer = () => {
               Vikas Aviation
             </Link>
           </div>
-          <small className="website-rights">Vikas Aviation Academy © {new Date().getFullYear()}</small>
+          <small className="website-rights">Zoro-Tech. All rights reserved. © {new Date().getFullYear()}</small>
           <div className="social-icons">
-            <Link className="social-icon-link facebook" to="/" target="_blank" aria-label="Facebook">
+            <Link className="social-icon-link facebook" to="https://www.facebook.com/profile.php?id=61573876600883" target="_blank" aria-label="Facebook">
               <FaFacebook />
             </Link>
-            <Link className="social-icon-link instagram" to="/" target="_blank" aria-label="Instagram">
+            <Link className="social-icon-link instagram" to="https://www.instagram.com/vikasaviationacademy/" target="_blank" aria-label="Instagram">
               <FaInstagram />
             </Link>
-            <Link className="social-icon-link youtube" to="/" target="_blank" aria-label="Youtube">
-              <FaTwitter />
-            </Link>
-            <Link className="social-icon-link twitter" to="/" target="_blank" aria-label="Twitter">
+           
+            <Link className="social-icon-link twitter" to="https://www.linkedin.com/in/vikas-aviation-academy-759049357/" target="_blank" aria-label="Twitter">
               <FaLinkedin />
             </Link>
           </div>

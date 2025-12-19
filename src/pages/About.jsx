@@ -45,12 +45,12 @@ const About = () => {
         <div className="about-stats">
           <div className="stat-item">
             <FaUsers className="stat-icon" />
-            <h3>500+</h3>
+            <h3>50+</h3>
             <p>Students Trained</p>
           </div>
           <div className="stat-item">
             <FaAward className="stat-icon" />
-            <h3>50+</h3>
+            <h3>5+</h3>
             <p>Airline Partners</p>
           </div>
         </div>
@@ -114,6 +114,88 @@ const About = () => {
           </div>
         </div>
       </div>
+     
+
+
+<div className="container section">
+  <h2 className="section-title">What Makes Our Students Industry-Ready</h2>
+
+  <div className="why-card-grid">
+    <div className="why-card">
+      <h3>Professional Discipline</h3>
+      <p>
+        Students are trained to follow airline discipline, punctuality,
+        and professional behavior expected by aviation employers.
+      </p>
+    </div>
+
+    <div className="why-card">
+      <h3>Interview Confidence</h3>
+      <p>
+        Regular mock interviews and feedback sessions help students
+        face airline selection processes confidently.
+      </p>
+    </div>
+
+    <div className="why-card">
+      <h3>Customer Handling Skills</h3>
+      <p>
+        Strong focus on passenger interaction, service etiquette,
+        and problem-solving skills in real-world scenarios.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+ <div className="container section">
+  <h2 className="section-title">Our Training Philosophy</h2>
+
+  <div className="about-text center-text">
+    <p>
+      At Vikas Aviation Academy, training goes beyond classroom learning.
+      We focus on discipline, confidence, and professional conduct required
+      in the aviation industry.
+    </p>
+    <p>
+      Our structured approach combines theoretical knowledge, practical exposure,
+      grooming standards, and continuous evaluation to ensure students are
+      fully prepared for real airline environments.
+    </p>
+  </div>
+</div>
+
+<div className="container section">
+  <h2 className="section-title">What Makes Our Students Industry-Ready</h2>
+
+  <div className="why-card-grid">
+    <div className="why-card">
+      <h3>Professional Discipline</h3>
+      <p>
+        Students are trained to follow airline discipline, punctuality,
+        and professional behavior expected by aviation employers.
+      </p>
+    </div>
+
+    <div className="why-card">
+      <h3>Interview Confidence</h3>
+      <p>
+        Regular mock interviews and feedback sessions help students
+        face airline selection processes confidently.
+      </p>
+    </div>
+
+    <div className="why-card">
+      <h3>Customer Handling Skills</h3>
+      <p>
+        Strong focus on passenger interaction, service etiquette,
+        and problem-solving skills in real-world scenarios.
+      </p>
+    </div>
+  </div>
+</div>
+
+
 
       {/* CTA */}
       <div className="container section about-cta">

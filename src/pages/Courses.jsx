@@ -43,7 +43,7 @@ const Courses = () => {
       <div className="courses-header">
         <div className="container">
           <h1>Our Courses</h1>
-          <p>Choose the path that leads to your dream career</p>
+          <p style={{color:"whitesmoke"}}>Choose the path that leads to your dream career</p>
         </div>
       </div>
 
