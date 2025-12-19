@@ -4,30 +4,8 @@
 }
 
 /* Hero Section */
-.hero-section {
-    /* background:  #e0f7fa 100%); */
-background: linear-gradient(
-  135deg,
-  rgba(33, 30, 30, 0.495),
-  rgba(33, 30, 30, 0.495)
-  
-),
-url(../assets/image.png);    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 8rem 0;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    min-height: 80vh;
-}
 
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px;
-}
+
 
 .hero-title {
     font-size: 3.5rem;
@@ -129,7 +107,7 @@ url(../assets/image.png);    background-size: cover;
 }
 
 .cta-btn:hover {
-    background-color: var(--color-secondary);
+    background-color: rgb(75, 121, 196);
     color: var(--color-white);
 }
 
@@ -139,10 +117,7 @@ url(../assets/image.png);    background-size: cover;
         font-size: 2.5rem;
     }
 
-    .hero-section {
-        padding: 4rem 0;
-        min-height: auto;
-    }
+   
 
     .hero-btns {
         flex-direction: column;
@@ -154,4 +129,314 @@ url(../assets/image.png);    background-size: cover;
         width: 100%;
         text-align: center;
     }
+}
+
+
+
+/* Hero container */
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background video */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Dark overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 40, 80, 0.55);
+  z-index: 2;
+}
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 1200px;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* Title */
+.hero-title {
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #e6f2ff;
+}
+
+/* Buttons */
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-btn-primary,
+.hero-btn-outline {
+  padding: 0.75rem 1.8rem;
+  font-size: 1rem;
+  border-radius: 30px;
+}
+
+/* ---------- Responsive Breakpoints ---------- */
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 90vh;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+  }
+
+  .hero-btn-primary,
+  .hero-btn-outline {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .hero-content {
+    padding-top: 60px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+}
+
+
+
+
+/* ===============================
+   WHY CHOOSE CARD GRID
+================================ */
+.why-card-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.8rem;
+}
+
+.why-card {
+  background: var(--color-white);
+  padding: 2.8rem 2.2rem;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.why-card-icon {
+  font-size: 2.8rem;
+  color: var(--color-primary);
+  margin-bottom: 1.2rem;
+}
+
+.why-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.7rem;
+  color: var(--color-secondary);
+}
+
+.why-card p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--color-text-light);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+  .why-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .why-card-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .why-card {
+    padding: 2.4rem 1.6rem;
+  }
+}
+
+
+
+/* ===============================
+   CTA SECTION
+================================ */
+.cta-section {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  padding: 5rem 1rem;
+}
+
+.cta-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.cta-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.95;
+  margin-bottom: 2.5rem;
+}
+
+/* Actions */
+.cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cta-btn {
+  padding: 0.85rem 2.2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+/* Small note */
+.cta-note {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 4rem 1rem;
+  }
+
+  .cta-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-title {
+    font-size: 1.8rem;
+  }
+}
+
+
+/* ===============================
+   TRAINING SECTION
+================================ */
+.training-section {
+  padding: 4.5rem 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.184)), url(../assets/bg-st.png);
+  width: 100%;
+  
+}
+
+.training-intro {
+  max-width: 720px;
+  margin: 0 auto 3.5rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text-light);
+}
+
+/* Grid */
+.training-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.training-item {
+  background: var(--color-white);
+  padding: 2.6rem 2.4rem;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.training-item h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.6rem;
+  color: var(--color-secondary);
+}
+
+.training-item p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--color-text-light);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .training-grid {
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+  }
+
+  .training-item {
+    padding: 2.2rem 1.8rem;
+  }
 }

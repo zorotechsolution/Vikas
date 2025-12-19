@@ -109,19 +109,4 @@
     .social-media-wrap {
         flex-direction: column;
     }
-
-    /* Make link blocks full-width and center content on small screens */
-    .footer-link-items {
-        width: 100%;
-        align-items: center;
-        text-align: center;
-        margin: 8px 0;
-    }
-
-    .social-icons {
-        width: auto;
-        gap: 12px;
-        justify-content: center;
-        margin-bottom: 8px;
-    }
 }

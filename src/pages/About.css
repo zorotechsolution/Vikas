@@ -1,89 +1,285 @@
+/* ===============================
+   BASE RESET FOR ABOUT
+================================ */
+.about-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===============================
+   HEADER (CALM & STRONG)
+================================ */
 .about-header {
-    background-color: var(--color-secondary);
-    color: var(--color-white);
-    padding: 4rem 0;
-    text-align: center;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  padding: 5rem 1rem 4rem;
+  text-align: center;
 }
 
 .about-header h1 {
-    color: var(--color-white);
-    font-size: 2.5rem;
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
+.about-subtitle {
+  max-width: 680px;
+  margin: 1rem auto 0;
+  font-size: 1.05rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* ===============================
+   COMMON SECTION SPACING
+================================ */
+.section {
+  padding: 4.5rem 1rem;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* ===============================
+   ABOUT CONTENT (TEXT FIRST)
+================================ */
 .about-content {
-    display: flex;
-    gap: 4rem;
-    align-items: center;
-}
-
-.about-text {
-    flex: 1;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: center;
 }
 
 .about-text h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: var(--color-secondary);
+  font-size: 2rem;
+  margin-bottom: 1.4rem;
+  color: var(--color-secondary);
 }
 
 .about-text p {
-    margin-bottom: 1.5rem;
-    color: var(--color-text-light);
-    line-height: 1.8;
+  color: var(--color-text-light);
+  line-height: 1.85;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
 }
 
+/* ===============================
+   STATS (SUBTLE, NOT LOUD)
+================================ */
 .about-stats {
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
 }
 
 .stat-item {
-    text-align: center;
-    background: var(--color-white);
-    padding: 2rem;
-    border-radius: var(--border-radius-md);
-    box-shadow: var(--shadow-sm);
+  background: var(--color-white);
+  padding: 2rem 2.2rem;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
 }
 
 .stat-icon {
-    font-size: 2.5rem;
-    color: var(--color-primary);
-    margin-bottom: 0.5rem;
+  font-size: 2.4rem;
+  color: var(--color-primary);
 }
 
 .stat-item h3 {
-    font-size: 2rem;
-    color: var(--color-secondary);
-    margin-bottom: 0.25rem;
+  font-size: 1.9rem;
+  color: var(--color-secondary);
+  margin: 0;
 }
 
-.mission-vision-section {
-    background-color: var(--color-bg-light);
-    padding: 4rem 0;
+.stat-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-text-light);
 }
 
+/* ===============================
+   SECTION TITLE (SOFT)
+================================ */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3.2rem;
+  color: var(--color-secondary);
+}
+
+/* ===============================
+   UNIQUE INFO GRID (NOT CARDY)
+================================ */
 .mv-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
 }
 
 .mv-card {
-    text-align: center;
-    padding: 3rem 2rem;
+  text-align: left;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .mv-icon {
-    font-size: 3rem;
-    color: var(--color-primary);
-    margin-bottom: 1.5rem;
+  font-size: 2.4rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        gap: 2rem;
-    }
+.mv-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.6rem;
+}
+
+.mv-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text-light);
+}
+
+/* ===============================
+   MISSION & VISION (FOCUSED)
+================================ */
+.mission-vision-section {
+  background-color: var(--color-bg-light);
+  padding: 4.5rem 1rem;
+}
+
+.mission-vision-section .mv-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+/* ===============================
+   CTA (QUIET CONFIDENCE)
+================================ */
+.about-cta {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.about-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-secondary);
+}
+
+.about-cta p {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* ===============================
+   RESPONSIVE FLOW
+================================ */
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .mv-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 3.5rem 1rem;
+  }
+
+  .mv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* ===============================
+   MISSION & VISION SECTION
+================================ */
+.mission-vision-section {
+  background-color: var(--color-bg-light);
+  padding: 4.5rem 1rem;
+}
+
+.mission-vision-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Grid layout */
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+/* Card style */
+.mv-card {
+  background: var(--color-white);
+  padding: 3rem 2.5rem;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.mv-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon */
+.mv-icon {
+  font-size: 3rem;
+  color: var(--color-primary);
+  margin-bottom: 1.2rem;
+}
+
+/* Heading */
+.mv-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-secondary);
+}
+
+/* Text */
+.mv-card p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--color-text-light);
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .mv-grid {
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+  }
+
+  .mv-card {
+    padding: 2.5rem 1.8rem;
+  }
+
+  .mv-icon {
+    font-size: 2.6rem;
+  }
 }

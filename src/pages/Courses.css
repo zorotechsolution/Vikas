@@ -1,5 +1,5 @@
 .courses-header {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     color: var(--color-white);
     padding: 4rem 0;
     text-align: center;
@@ -66,7 +66,7 @@
 }
 
 .detail-icon {
-    color: var(--color-primary);
+    color: var(--color-secondary);
     margin-right: 10px;
     font-size: 1.1rem;
 }

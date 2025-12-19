@@ -33,7 +33,7 @@ const Footer = () => {
             
           </div>
           <div className="footer-link-items">
-            <h2 style={{fontSize:"16px"}} >Social  Media</h2>
+            <h2  >Social  Media</h2>
             <Link to="/">Instagram</Link>
             <Link to="/">Facebook</Link>
             <Link to="/">Youtube</Link>

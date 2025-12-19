@@ -130,3 +130,144 @@
         color: var(--color-secondary);
     }
 }
+
+
+/* ===============================
+   FOOTER BASE
+================================ */
+.footer-container {
+  background-color: var(--color-secondary);
+  padding: 4rem 1rem 2rem;
+  color: var(--color-white);
+}
+
+/* ===============================
+   LINKS AREA
+================================ */
+.footer-links {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.footer-link-wrapper {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.footer-link-items {
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+}
+
+.footer-link-items h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  color: var(--color-white);
+}
+
+.footer-link-items a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+  transition: opacity 0.2s ease;
+}
+
+.footer-link-items a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ===============================
+   SOCIAL MEDIA SECTION
+================================ */
+.social-media {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 2rem;
+}
+
+.social-media-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Logo */
+.footer-logo .social-logo {
+  color: var(--color-white);
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Rights text */
+.website-rights {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon-link {
+  color: var(--color-white);
+  font-size: 1.3rem;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.social-icon-link:hover {
+  transform: translateY(-3px);
+  opacity: 0.85;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+  .footer-links {
+    justify-content: center;
+  }
+
+  .footer-link-wrapper {
+    justify-content: center;
+  }
+
+  .footer-link-items {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-media-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 3rem 1rem 2rem;
+  }
+
+  .footer-link-items h2 {
+    font-size: 1rem;
+  }
+
+  .social-icon-link {
+    font-size: 1.2rem;
+  }
+}

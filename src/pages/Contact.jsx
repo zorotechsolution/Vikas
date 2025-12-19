@@ -32,7 +32,8 @@ const Contact = () => {
                 <FaPhoneAlt className="info-icon" />
                 <div>
                     <h3>Call Us</h3>
-                    <p>+91 94878 06735</p>
+                    <p>+91 94878 06735,</p>
+                    <p>+91 94871 87384</p>
                 </div>
             </div>
 
@@ -40,17 +41,17 @@ const Contact = () => {
                 <FaEnvelope className="info-icon" />
                 <div>
                     <h3>Email Us</h3>
-                    <p>admissions@Vikasaviation.com</p>
+                    <p>vikasaviationacademy@gmail.com</p>
                 </div>
             </div>
 
-            <div className="info-item">
+            {/* <div className="info-item">
                 <FaWhatsapp className="info-icon" />
                 <div>
                     <h3>WhatsApp</h3>
                     <p>+91 98765 43210</p>
                 </div>
-            </div>
+            </div> */}
         </div>
 
         <div className="contact-form-wrapper">

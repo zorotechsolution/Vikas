@@ -5,38 +5,36 @@ import { FaClock, FaGraduationCap, FaBriefcase } from 'react-icons/fa';
 import './Courses.css';
 
 const coursesData = [
-  {
-    id: 1,
-    title: 'Diploma in Cabin Crew Training',
-    duration: '11 Months',
-    eligibility: '12th Pass / Graduate',
-    outcome: 'Flight Attendant, In-flight Services',
-    description: 'Master the art of in-flight services, safety procedures, and passenger handling to become a world-class cabin crew member.'
-  },
-  {
-    id: 2,
-    title: 'Airport Ground Staff Services',
-    duration: '6 Months',
-    eligibility: '12th Pass (Any Stream)',
-    outcome: 'Check-in Agent, Customer Service Executive',
-    description: 'Learn the intricacies of airport operations, from check-in procedures to ramp handling and passenger assistance.'
-  },
-  {
-    id: 3,
-    title: 'Aviation Hospitality & Management',
-    duration: '12 Months',
-    eligibility: '12th Pass / Graduate',
-    outcome: 'Airport Manager, Lounge Host, VIP Handling',
-    description: 'A comprehensive course covering aviation management, hospitality, and luxury service standards.'
-  },
-  {
-    id: 4,
-    title: 'Travel & Tourism Management',
-    duration: '6 Months',
-    eligibility: '10th / 12th Pass',
-    outcome: 'Travel Consultant, Tour Operator',
-    description: 'Explore the travel industry with training in ticketing, itinerary planning, and global tourism.'
-  }
+ {
+  id: 1,
+  title: 'NCVTE Diploma in Airport Ground Staff Training',
+  duration: '6 Months',
+  eligibility: '10+2 Pass ',
+  outcome: 'Placement assistance in airlines, airports, and aviation service companies',
+description: 'Airport operations training with passenger handling, safety, grooming.'
+
+
+},
+ {
+  id: 2,
+  title: 'NCVTE Certificate in Air Fares & Ticketing',
+  duration: '3 Months',
+  eligibility: '10+2 Pass , Basic Computer Knowledge',
+  outcome: 'Career opportunities in airline ticketing, travel agencies, and airport reservation departments',
+  description: 'Airline fare, ticketing, reservation systems, airport codes, and travel documentation training.'
+},
+{
+  id: 3,
+  title: 'Diploma in Aviation Management',
+  duration: '12 Months',
+  eligibility: '10+2 Pass or Graduation ',
+  outcome: 'Management roles in airlines, airports, aviation services, and ground operations',
+  description: 'Aviation management training covering operations, leadership, safety, and customer service.'
+
+
+}
+
+  
 ];
 
 const Courses = () => {
