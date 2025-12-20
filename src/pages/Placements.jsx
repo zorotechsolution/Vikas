@@ -13,10 +13,10 @@ const partners = ['IndiGo', 'SpiceJet', 'Air India', 'Vistara', 'Emirates', 'Qat
 const Placements = () => {
   return (
     <div className="placements-page">
-       <div className="placements-header">
+       <div className="courses-header">
         <div className="container">
           <h1>Placements</h1>
-          <p>Our Success Stories</p>
+          <p style={{color:"whitesmoke"}}>Our Success Stories</p>
         </div>
       </div>
 

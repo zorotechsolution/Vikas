@@ -32,7 +32,7 @@ const Home = () => {
       Premium training for Cabin Crew, Ground Staff, and Aviation Management.
       Your runway to success starts here.
     </p>
-    <div className="hero-btns">
+    <div className="hero-btns" >
       <Button to="/admissions" className="hero-btn-primary">
         Apply Now
       </Button>

@@ -1,17 +1,45 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Button from '../components/Button';
 import './Admissions.css';
 import { FaFileAlt, FaUserTie, FaCheckCircle } from 'react-icons/fa';
+import emailjs from "@emailjs/browser"
 
 const Admissions = () => {
+
+  const formRef = useRef();
+
+  const sendEmail =async (e)=>{
+    e.preventDefault();
+
+  try{
+       await emailjs
+       .sendForm(
+      "service_2b06l3w",
+      "template_gw4d6la",
+      formRef.current,
+      "7y3DmmJwMX1nxV6YL",
+    )
+    alert("Successfully send")
+    }
+    catch(err){
+
+       alert(err);
+    
+    }
+    finally{
+         console.log("EmailJS request completed");
+         formRef.current.reset();
+    }
+  }
+
   return (
     <div className="admissions-page">
 
       {/* Header */}
-      <div className="admissions-header">
+      <div className="courses-header">
         <div className="container">
           <h1 style={{color:'whitesmoke'}}>Admission</h1>
-          <p>Begin your journey towards a professional aviation career</p>
+          <p style={{color:"whitesmoke"}}>Begin your journey towards a professional aviation career</p>
         </div>
       </div>
 
@@ -44,7 +72,7 @@ const Admissions = () => {
         </div>
         
       </div>
-      <div class="" style={{width: "90%",margin:"auto"}}>
+      <div className="" style={{width: "90%",margin:"auto"}}>
         <hr />
       </div>
       
@@ -61,7 +89,7 @@ const Admissions = () => {
           </ul>
         </div>
       </div>
-      <div class="" style={{width: "90%",margin:"auto"}}>
+      <div className="" style={{width: "90%",margin:"auto"}}>
         <hr />
       </div>
 
@@ -74,36 +102,35 @@ const Admissions = () => {
             Fill in the details below and our admission team will contact you shortly.
           </p>
 
-          <form className="admission-form">
+          <form className="admission-form" onSubmit={sendEmail} ref={formRef}>
             <div className="form-group">
               <label>Full Name</label>
-              <input type="text" placeholder="Enter your name" required />
+              <input type="text" name='full_name' placeholder="Enter your name" required />
             </div>
 
             <div className="form-group">
               <label>Email Address</label>
-              <input type="email" placeholder="Enter your email" required />
+              <input type="email" name='email' placeholder="Enter your email" required />
             </div>
 
             <div className="form-group">
               <label>Phone Number</label>
-              <input type="tel" placeholder="Enter your phone number" required />
+              <input type="tel" name="phone" placeholder="Enter your phone number" required />
             </div>
 
             <div className="form-group">
               <label>Interested Course</label>
-              <select required defaultValue="">
+              <select name="course" required defaultValue="">
                 <option value="" disabled>Select a course</option>
-                <option value="cabin-crew">Diploma in Cabin Crew Training</option>
-                <option value="ground-staff">Airport Ground Staff Services</option>
+                <option value="Airport Ground Staff">Airport Ground Staff</option>
+                <option value="Air Fares & Ticketing">Air Fares & Ticketing</option>
                 <option value="aviation-management">Aviation Management</option>
-                <option value="ticketing">Air Fares & Ticketing</option>
               </select>
             </div>
 
             <div className="form-group">
               <label>Educational Qualification</label>
-              <select required defaultValue="">
+              <select name="qualification" required defaultValue="">
                 <option value="" disabled>Select qualification</option>
                 <option value="12th">12th Pass</option>
                 <option value="graduate">Graduate</option>

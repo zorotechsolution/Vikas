@@ -1,15 +1,51 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Button from '../components/Button';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import './Contact.css';
+import emailjs from "@emailjs/browser"
 
 const Contact = () => {
+
+    const useForm = useRef()
+
+    const sendEmail = async (e)=>{
+        e.preventDefault();
+        
+
+        try  {
+            await emailjs
+            .sendForm(
+                "service_2b06l3w",
+                "template_syn6ogl",
+                useForm.current,
+                "7y3DmmJwMX1nxV6YL"
+
+            )
+           
+            alert("Successfully send")
+        }
+        catch(err){
+            alert(err)
+            
+
+
+        }
+        finally{
+            console.log("EmailJS request completed");
+             useForm.current.reset();
+
+            
+
+        }
+
+    }
+
   return (
     <div className="contact-page">
-       <div className="contact-header">
+       <div className="courses-header">
         <div className="container">
           <h1 style={{color:"white"}}>Contact Us</h1>
-          <p>We'd love to hear from you</p>
+          <p style={{color:"whitesmoke"}}>We'd love to hear from you</p>
         </div>
       </div>
 
@@ -45,33 +81,31 @@ const Contact = () => {
                 </div>
             </div>
 
-            {/* <div className="info-item">
-                <FaWhatsapp className="info-icon" />
-                <div>
-                    <h3>WhatsApp</h3>
-                    <p>+91 98765 43210</p>
-                </div>
-            </div> */}
+           
         </div>
 
         <div className="contact-form-wrapper">
-             <form className="contact-form">
+             <form className="contact-form" ref={useForm} onSubmit={sendEmail}>
                 <h3>Send Message</h3>
                 <div className="form-group">
                     <label>Name</label>
-                    <input type="text" placeholder="Your Name" required />
+                    <input type="text" name='name' placeholder="Your Name" required />
                 </div>
                 <div className="form-group">
                     <label>Email</label>
-                    <input type="email" placeholder="Your Email" required />
+                    <input type="email" name='email' placeholder="Your Email" required />
                 </div>
                  <div className="form-group">
                     <label>Phone</label>
-                    <input type="tel" placeholder="Your Phone" required />
+                    <input type="tel" name='phone' placeholder="Your Phone" required />
                 </div>
-                <div className="form-group">
+                 <div className="form-group">
+                    <label>Subject</label>
+                    <input type="text" name='title' placeholder="Your Subject" required />
+                </div>
+                <div className="form-group"  style={{marginBottom:"10px"}}>
                     <label>Message</label>
-                    <textarea rows="5" placeholder="How can we help you?" required></textarea>
+                    <textarea rows="5" name='message' placeholder="How can we help you?" required></textarea>
                 </div>
                 <Button className="contact-btn">Send Message</Button>
             </form>

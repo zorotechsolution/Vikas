@@ -1,14 +1,30 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import './Gallery.css';
 import { FaTimes } from 'react-icons/fa';
+import emailjs from "@emailjs/browser";
 
 const images = [
-  { id: 1, category:'' , src: 'https://images.unsplash.com/photo-1540962351504-03099e0a754b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', alt: 'Classroom Training' },
-  { id: 2, category:'' , src: 'https://images.unsplash.com/photo-1520697830682-bbb6e85e2b0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', alt: 'Cabin Simulation' },
-  { id: 3, category:'' , src: 'https://fl360aero.com/images/41.jpg', alt: 'Ground Staff Operation' },
-  { id: 4, category:'' , src: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', alt: 'Students Group' },
-  { id: 5, category:'' , src: 'https://www.workitdaily.com/media-library/woman-conducts-a-mock-interview-with-her-colleague.jpg?id=22782816&width=1200&height=800&quality=50&coordinates=0%2C0%2C0%2C0', alt: 'Mock Interview' },
-  { id: 6, category:'' , src: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', alt: 'Graduation Day' },
+  { id: 1, category: 'students', src: 'https://ik.imagekit.io/zorotech/vikas/DSC_5183.JPG', alt: 'img' },
+  { id: 2, category: 'celebration', src: 'https://ik.imagekit.io/zorotech/vikas/WhatsApp%20Image%202025-12-19%20at%205.41.56%20PM%20(1).jpeg', alt: 'img' },
+  { id: 3, category: 'internship', src: 'https://ik.imagekit.io/zorotech/vikas/WhatsApp%20Image%202025-12-19%20at%205.41.51%20PM%20(1).jpeg', alt: 'img' },
+  { id: 4, category: 'students', src: 'https://ik.imagekit.io/zorotech/vikas/DSC_5191.JPG', alt: 'img' },
+  { id: 5, category: 'internship', src: 'https://ik.imagekit.io/zorotech/vikas/WhatsApp%20Image%202025-12-19%20at%205.41.51%20PM.jpeg', alt: 'img' },
+  { id: 6, category: '', src: 'https://ik.imagekit.io/zorotech/vikas/WhatsApp%20Image%202025-12-19%20at%205.41.34%20PM.jpeg', alt: 'img' },
+  { id: 7, category: 'students', src: 'https://ik.imagekit.io/zorotech/vikas/DSC_5195.JPG', alt: 'img' },
+  { id: 8, category: 'celebration', src: 'https://ik.imagekit.io/zorotech/vikas/WhatsApp%20Image%202025-12-19%20at%205.41.43%20PM.jpeg', alt: 'img' },
+  { id: 9, category: 'students', src: 'https://ik.imagekit.io/zorotech/vikas/WhatsApp%20Image%202025-12-19%20at%205.41.38%20PM%20(1).jpeg', alt: 'img' },
+  { id: 10, category: 'students', src: 'https://ik.imagekit.io/zorotech/vikas/WhatsApp%20Image%202025-12-19%20at%205.41.53%20PM%20(1).jpeg', alt: 'img' },
+  { id: 11, category: 'students', src: 'https://ik.imagekit.io/zorotech/vikas/DSC_5195.JPG', alt: 'img' },
+  { id: 12, category: 'celebration', src: 'https://ik.imagekit.io/zorotech/vikas/WhatsApp%20Image%202025-12-19%20at%205.41.42%20PM.jpeg', alt: 'img' },
+  { id: 13, category: 'celebration', src: 'https://ik.imagekit.io/zorotech/vikas/WhatsApp%20Image%202025-12-19%20at%205.41.48%20PM.jpeg', alt: 'img' },
+  { id: 14, category: '', src: 'https://ik.imagekit.io/zorotech/vikas/WhatsApp%20Image%202025-12-19%20at%205.41.40%20PM%20(1).jpeg', alt: 'img' },
+  { id: 15, category: 'celebration', src: 'https://ik.imagekit.io/zorotech/vikas/WhatsApp%20Image%202025-12-19%20at%205.41.56%20PM.jpeg', alt: 'img' },
+  { id: 16, category: '', src: 'https://ik.imagekit.io/zorotech/vikas/WhatsApp%20Image%202025-12-19%20at%205.41.47%20PM.jpeg', alt: 'img' },
+  { id: 18, category: 'celebration', src: 'https://ik.imagekit.io/zorotech/vikas/WhatsApp%20Image%202025-12-19%20at%205.41.54%20PM%20(1).jpeg', alt: 'img' },
+  { id: 21, category: 'celebration', src: 'https://ik.imagekit.io/zorotech/vikas/WhatsApp%20Image%202025-12-19%20at%205.41.53%20PM.jpeg', alt: 'img' },
+  { id: 24, category: 'celebration', src: 'https://ik.imagekit.io/zorotech/vikas/WhatsApp%20Image%202025-12-19%20at%205.41.47%20PM%20(1).jpeg', alt: 'img' },
+  { id: 25, category: '', src: 'https://ik.imagekit.io/zorotech/vikas/WhatsApp%20Image%202025-12-19%20at%205.41.46%20PM.jpeg', alt: 'img' },
+  { id: 26, category: 'celebration', src: 'https://ik.imagekit.io/zorotech/vikas/WhatsApp%20Image%202025-12-19%20at%205.41.52%20PM%20(1).jpeg', alt: 'img' }
 ];
 
 const Gallery = () => {
@@ -26,12 +42,15 @@ const Gallery = () => {
       ? images
       : images.filter(img => img.category === active);
 
+      
+
+
   return (
     <div className="gallery-page">
-      <div className="gallery-header">
+      <div className="courses-header">
         <div className="container">
           <h1 style={{color:"white"}}>Life at Vikas</h1>
-          <p>Moments of learning, joy, and success</p>
+          <p style={{color:"whitesmoke"}}>Moments of learning, joy, and success</p>
         </div>
       </div>
 
@@ -39,7 +58,7 @@ const Gallery = () => {
       <div className="container">
 
         <div className="gallery-filters">
-          {["All", "Crew Training", "Maintenance", "Private Pilot"].map(item => (
+          {["All", "students", "celebration", "internship"].map(item => (
             <button
               key={item}
               className={`filter-btn ${active === item ? "active" : ""}`}

@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="footer-link-items">
             <h2>About Us</h2>
             <Link to="/about">How it works</Link>
-            <Link to="/about">Testimonials</Link>
+            
             <Link to="/about">Careers</Link>
             <Link to="/about">Terms of Service</Link>
           </div>
@@ -20,24 +20,24 @@ const Footer = () => {
             <Link to="/contact">Contact</Link>
             <Link to="/contact">Support</Link>
             <Link to="/contact">Destinations</Link>
-            <Link to="/contact">Sponsorships</Link>
+            
           </div>
         </div>
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
             <h2>Courses</h2>
-            <Link to="/courses">Cabin Crew</Link>
-            <Link to="/courses">Ground Staff</Link>
-            <Link to="/courses">Pilot Training</Link>
-            <Link to="/courses">Management</Link>
+            <Link to="/courses">Airport Ground</Link>
+            <Link to="/courses">Air Fares & Ticketing</Link>
+            <Link to="/courses">Aviation Management</Link>
+            
             
           </div>
           <div className="footer-link-items">
             <h2  >Social  Media</h2>
-            <Link to="/">Instagram</Link>
-            <Link to="/">Facebook</Link>
-            <Link to="/">Youtube</Link>
-            <Link to="/">Twitter</Link>
+            <Link to="https://www.instagram.com/vikasaviationacademy/">Instagram</Link>
+            <Link to="https://www.facebook.com/profile.php?id=61573876600883">Facebook</Link>
+            <Link to="https://www.linkedin.com/in/vikas-aviation-academy-759049357/">X</Link>
+           
           </div>
         </div>
       </div>

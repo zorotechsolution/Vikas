@@ -16,10 +16,10 @@ const About = () => {
     <div className="about-page">
 
       {/* Hero */}
-      <div className="about-header">
+      <div className="courses-header">
         <div className="container">
           <h1 style={{color:"whitesmoke"}}>About Vikas Aviation Academy</h1>
-          <p className="about-subtitle">
+          <p className="about-subtitle" style={{color:"whitesmoke"}}>
             Shaping confident aviation professionals for global careers
           </p>
         </div>
