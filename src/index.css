@@ -14,7 +14,7 @@
   --color-error: #dc3545;
 
   /* Fonts */
-  --font-heading: 'Poppins', sans-serif;
+  --font-heading: "Share Tech", sans-serif;
   --font-body: 'Montserrat', sans-serif;
 
   /* Spacing */
@@ -37,6 +37,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", "Poppins", sans-serif;
+ 
 }
 
 body {

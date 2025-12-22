@@ -19,11 +19,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container container">
-        {/* <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          <img src="" alt="" />
-          Vikas <span className="logo-accent"> Aviation  Academy</span>
-          
-        </Link> */}
+       
         <img src={img } width={150} alt="" />
         
         <div className="menu-icon" onClick={toggleMenu}>
