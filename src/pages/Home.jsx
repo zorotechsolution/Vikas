@@ -66,7 +66,7 @@ const Home = () => {
 
 
       {/* Highlights Section */}
-      <section className="section " style={{padding:"40px", marginTop:"200px"}}>
+      <section className="section " style={{padding:"40px", marginTop:"150px"}}>
         <h2 className="section-title">Why Choose Vikas?</h2>
         <div className="features-grid">
           <Card className="feature-card">
@@ -202,7 +202,7 @@ const Home = () => {
 
 <section className="training-section"> 
   <div className="container">
-    <h2 className="section-title">Our Training Approach</h2>
+    <h2 className="section-title" style={{color:"whitesmoke"}}>Our Training Approach</h2>
 
     <p className="training-intro">
       At Vikas Aviation Academy, we focus on practical learning, confidence building,

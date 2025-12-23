@@ -4,7 +4,7 @@
   /* Colors */
   --color-primary: #0057b3;       /* Access Blue/Sky */
   --color-primary-dark: #0057b3;  /* Darker Blue for hover */
-  --color-secondary: #003459;     /* Deep Navy */
+  --color-secondary: #00518a;     /* Deep Navy */
   --color-accent: #E8F1F2;        /* Soft Light Gray/Blue */
   --color-white: #FFFFFF;
   --color-text-main: #333333;
@@ -14,8 +14,9 @@
   --color-error: #dc3545;
 
   /* Fonts */
-  --font-heading: "Share Tech", sans-serif;
-  --font-body: 'Montserrat', sans-serif;
+  --font-heading:  "Playfair Display", serif;
+  --font-body:  "Playfair Display", serif;
+   /* font-family:; */
 
   /* Spacing */
   --spacing-xs: 0.5rem;

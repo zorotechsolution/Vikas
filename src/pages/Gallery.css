@@ -155,10 +155,10 @@
 }
 
 .filter-btn.active {
-  background: #0ea5e9;
+  background: #003e69;
   color: #ffffff;
-  border-color: #0ea5e9;
-  box-shadow: 0 6px 18px rgba(14, 165, 233, 0.35);
+  border-color: #003e69;
+  box-shadow: 0 2px 10px #003e69;
 }
 
 /* ===============================

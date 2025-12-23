@@ -90,12 +90,44 @@ const About = () => {
   </div>
 </div>
 
+ <section className="about-section">
+      <div className="about-container">
+
+        {/* LEFT CONTENT */}
+        <div className="about-text">
+          <span className="about-tag">WELCOME TO AVIATIONLY</span>
+
+          <h1>
+  We are Vikas <br />
+  Aviation Academy <br />
+  shaping future aviators
+</h1>
+
+
+          <div className="about-highlight">
+            Vikas Aviation Academy is committed to delivering professional aviation training that builds confidence, discipline, and industry readiness.
+          </div>
+
+          <p>
+            Our programs focus on real world skills, expert guidance, and personalized mentoring to help students achieve successful careers in aviation.
+          </p>
+        </div>
+
+        {/* RIGHT IMAGE */}
+        <div className="about-image-wrapper">
+          <div className="about-image-border"></div>
+          <img src={"https://media.istockphoto.com/id/1141641174/photo/air-traffic-controller-signaling.jpg?s=612x612&w=0&k=20&c=tbQiMrG6wIP0gYk6h8vOa9eS2YSY8RRWdVPUsLaAahY="} alt="Aviation Crew" />
+        </div>
+
+      </div>
+    </section>
+
 
       {/* Mission Vision */}
-      <div className="mission-vision-section">
+      {/* <div className="mission-vision-section">
         <div className="container">
           <div className="mv-grid">
-            <Card className="mv-card">
+            <Card className="mv-card one">
               <FaBullseye className="mv-icon" />
               <h3>Our Mission</h3>
               <p>
@@ -103,7 +135,7 @@ const About = () => {
                 professionalism, and career success.
               </p>
             </Card>
-            <Card className="mv-card">
+            <Card className="mv-card two">
               <FaEye className="mv-icon" />
               <h3>Our Vision</h3>
               <p>
@@ -113,7 +145,7 @@ const About = () => {
             </Card>
           </div>
         </div>
-      </div>
+      </div> */}
      
 
 
