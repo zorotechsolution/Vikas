@@ -20,6 +20,7 @@ function App() {
           <Route path="placements" element={<Placements />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="contact" element={<Contact />} />
+          
         </Route>
       </Routes>
     </Router>
