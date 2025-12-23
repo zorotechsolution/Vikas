@@ -52,8 +52,8 @@ const Home = () => {
 
   <div class="feature-box">
     <div class="icon"><i class="fa-solid fa-suitcase-rolling"></i></div>
-    <h3>Cabin Trainings</h3>
-    <p>Professional cabin crew training for airline careers.</p>
+    <h3>Ground Staff training</h3>
+    <p>Professional Ground Staff Training for Aviation Careers.</p>
   </div>
 
   <div class="feature-box">
