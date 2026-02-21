@@ -66,7 +66,6 @@ const Contact = () => {
               </p>
             </div>
           </div>
-
           <div className="info-item">
             <FaPhoneAlt className="info-icon" />
             <div>
