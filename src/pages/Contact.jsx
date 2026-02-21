@@ -60,7 +60,12 @@ const Contact = () => {
                 <FaMapMarkerAlt className="info-icon" />
                 <div>
                     <h3>Visit Us</h3>
-                    <p>14-4C, Thattan Vilai Rd, Udhayamarthandam, Nagercoil, Tamil Nadu 629004</p>
+                        <p>U.G.P. Complex,<br/>
+                         Near Sundar Radios,<br/>
+                        Anna Bus Stand Back Side,<br/>
+                        Pathalvilai, Nagercoil,<br/>
+                        Kanyakumari District.
+                        </p>
                 </div>
             </div>
 
